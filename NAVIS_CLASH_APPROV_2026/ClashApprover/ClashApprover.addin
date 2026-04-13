@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ClashApprover.addin
+  ════════════════════
+  Manifiesto del Add-In para Navisworks Manage/Simulate 2026.
+
+  INSTALACIÓN — copiar estos archivos a:
+    C:\Users\<usuario>\AppData\Roaming\Autodesk\Navisworks Manage 2026\Plugins\ClashApprover\
+      ClashApprover.dll
+      ClashApprover.addin
+      ClashApprover.xaml
+      icon16.png  (opcional)
+      icon32.png  (opcional)
+-->
+<Manifest Version="1.0">
+
+  <PluginInfo
+    Id          = "ClashApprover"
+    Version     = "1.0.0.0"
+    Author      = "EGIS"
+    Description = "Importa CSV con nombres de Clash Tests y aprueba todos sus conflictos."
+    >
+
+    <Plugins>
+
+      <!-- Panel anclable (DockPane) -->
+      <Plugin
+        Id          = "ClashApprover.DockPane"
+        Assembly    = "ClashApprover.dll"
+        ClassName   = "ClashApprover.ClashApproverPlugin"
+        DisplayName = "Clash Approver"
+        ToolTip     = "Aprueba interferencias desde CSV"
+        />
+
+      <!-- Pestaña ribbon EGIS Smart Tools + grupo Clash Tools -->
+      <Plugin
+        Id          = "ClashApprover.Ribbon"
+        Assembly    = "ClashApprover.dll"
+        ClassName   = "ClashApprover.ClashApproverCommandHandler"
+        DisplayName = "EGIS Smart Tools"
+        ToolTip     = "EGIS Smart Tools"
+        />
+
+    </Plugins>
+
+  </PluginInfo>
+
+</Manifest>
