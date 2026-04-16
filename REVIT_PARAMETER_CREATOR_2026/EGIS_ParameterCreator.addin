@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>EGIS Parameter Creator</Name>
+    <Assembly>EGIS_ParameterCreator\EGIS_ParameterCreator.dll</Assembly>
+    <FullClassName>EGIS_ParameterCreator.App</FullClassName>
+    <ClientId>B2C3D4E5-F6A7-8901-BCDE-F12345678901</ClientId>
+    <VendorId>EGIS_CO</VendorId>
+    <VendorDescription>Egis Colombia - EGIS Smart Tools</VendorDescription>
+  </AddIn>
+
+  <AddIn Type="Command">
+    <n>EGIS Crear Parametros</n>
+    <Assembly>EGIS_ParameterCreator\EGIS_ParameterCreator.dll</Assembly>
+    <FullClassName>EGIS_ParameterCreator.Commands.CreateParametersCommand</FullClassName>
+    <ClientId>B2C3D4E5-F6A7-8901-BCDE-F12345678902</ClientId>
+    <Text>Crear Parametros</Text>
+    <VendorId>EGIS_CO</VendorId>
+    <VendorDescription>Egis Colombia - EGIS Smart Tools</VendorDescription>
+  </AddIn>
+
+</RevitAddIns>
